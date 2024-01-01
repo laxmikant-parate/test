@@ -1,10 +1,10 @@
 import datetime
 
-# Get current time in UTC
+# Get current UTC time
 utc_now = datetime.datetime.utcnow()
 
-# Convert to a specific timezone (replace with the actual timezone)
-local_now = utc_now.astimezone(datetime.timezone(datetime.timedelta(hours=-5)))
+# Convert to India Standard Time (IST)
+india_now = utc_now.astimezone(datetime.timezone(datetime.timedelta(hours=5.5)))
 
-print(f"UTC time: {utc_now}")
-print(f"Local time: {local_now}")
+# Print the time
+print(f"Current time in India (IST): {india_now}")
